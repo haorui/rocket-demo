@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: {{ include "rocket-demo.fullname" . }}
@@ -24,7 +24,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-              containerPort: {{ .Values.service.internalPort }}
+            - containerPort: {{ .Values.service.internalPort }}
               protocol: TCP
           env:
             - name: MONGO_URL
