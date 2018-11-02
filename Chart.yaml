@@ -2,4 +2,18 @@ apiVersion: v1
 appVersion: "1.0"
 description: A Helm chart for Kubernetes
 name: rocket-demo
-version: 0.1.0
+version: 0.1.5
+keywords:
+- chat
+- communication
+- http
+- web
+- application
+- nodejs
+- javascript
+- meteor
+home: https://rocket.chat/
+icon: https://pbs.twimg.com/profile_images/1016397063649660929/14EIApTi_400x400.jpg
+sources:
+- https://github.com/RocketChat/Docker.Official.Image/
+engine: gotpl

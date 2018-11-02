@@ -15,7 +15,7 @@ fullnameOverride: ""
 service:
   name: rocket
   type: ClusterIP
-  externalPort: 3000
+  externalPort: 80
   internalPort: 3000
 
 ingress:
